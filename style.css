@@ -85,6 +85,9 @@ body {
     max-height: 230px;
     color: white;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #topDiv .container h1 {
@@ -103,6 +106,7 @@ body {
 
 #topDiv .container img {
     width: 50%;
+    max-width: 400px;
     position: absolute;
     left: 10px;
     bottom: 0;
@@ -162,4 +166,85 @@ body {
     color: white;
     padding: 20px 0;
     font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    #topDiv .container {
+        height: 35vh;
+        max-height: none;
+    }
+
+    #topDiv .container h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    #topDiv .container p {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    #infoDiv .container p {
+        font-size: 20px;
+    }
+
+    .card .title {
+        font-size: 22px;
+    }
+
+    .card .contents .section { 
+        width: 100px;
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    #searchDiv #searchView {
+        width: 70%;
+    }
+
+    #searchDiv #searchView input {
+        padding: 20px;
+        font-size: 25px;
+    }
+
+    #footerDiv {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #topDiv .container h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    #topDiv .container p {
+        font-size: 30px;
+        width: 50%;
+    }
+    #infoDiv .container p {
+        font-size: 22px;
+    }
+
+    .card .title {
+        font-size: 25px;
+     }
+}
+
+@media (min-width: 1200px) {
+    #topDiv .container h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    #topDiv .container p {
+        font-size: 35px;
+        width: 50%;
+    }
+
+    #footerDiv {
+        font-size: 25px;
+    }
 }
