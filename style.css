@@ -57,9 +57,26 @@ body {
 }
 
 .card .contents {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 20px;
     background-color: white;
     border-radius: 0 0 10px 10px;
+}
+
+.card .contents .section {
+    width: 80px;
+    text-align: center;
+}
+
+.card .contents .section:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card .contents .section img {
+    width: 100%;
 }
 
 #topDiv .container {
@@ -137,5 +154,12 @@ body {
     background-color: var(--main-color);
     border-radius: 10px 0 0 10px;
     color: white;
+    font-size: 20px;
+}
+
+#footerDiv {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 0;
     font-size: 20px;
 }
