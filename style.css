@@ -130,6 +130,10 @@ body {
     margin-left: 10px;
 }
 
+#searchDiv .container {
+    padding: 20px 0;
+}
+
 #searchDiv #searchView {
     display: flex;
     align-items: stretch;
@@ -167,6 +171,14 @@ body {
     padding: 20px 0;
     font-size: 20px;
     text-align: center;
+}
+
+#sectionsDiv .container {
+    padding: 20px 0;
+}
+
+#teamDiv .container {
+    padding: 20px 0;
 }
 
 @media (min-width: 700px) {
