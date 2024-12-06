@@ -1,0 +1,205 @@
+html {
+    --main-color: #3B7FFF;
+    --secondary-color: #b9d1ff;
+    --background-color: #eee;
+    --font-color: #173772;
+    --shadow-color: #16316361;
+}
+
+* {
+    box-sizing: border-box !important;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Zain';
+}
+
+.container {
+    margin: auto;
+    padding: 10px 20px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px var(--shadow-color);
+}
+
+.card .title {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+
+.card .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.card .contents p {
+    font-size: 18px;
+}
+
+.card .contents button {
+    font-size: 18px;
+    padding: 5px 15px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-right: 50px;
+}
+
+.card .contents button:hover {
+    cursor: pointer;
+    background-color:var(--font-color);
+}
+
+
+#topDiv .container {
+    background-image: linear-gradient(to left, var(--main-color), white);
+    height: 30vh;
+    max-height: 230px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#topDiv .container h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#topDiv .container p {
+    font-size: 20px;
+    width: 50%;
+}
+
+#topDiv .container p i {
+    margin-left: 10px;
+}
+
+#topDiv .container img {
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+
+#footerDiv {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    #topDiv .container {
+        height: 35vh;
+        max-height: none;
+    }
+
+    #topDiv .container h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    #topDiv .container p {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .card .title {
+        font-size: 22px;
+    }
+
+    .card .contents p {
+        font-size: 20px;
+    }
+
+    .card .contents button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    #footerDiv {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #topDiv .container h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    #topDiv .container p {
+        font-size: 30px;
+        width: 50%;
+    }
+
+    .card .title {
+        font-size: 25px;
+     }
+
+     .card .contents p {
+        font-size: 22px;
+     }
+
+     .card .contents button {
+        font-size: 22px;
+     }
+}
+
+@media (min-width: 1200px) {
+    #topDiv .container h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    #topDiv .container p {
+        font-size: 35px;
+        width: 50%;
+    }
+
+    #footerDiv {
+        font-size: 25px;
+    }
+}
